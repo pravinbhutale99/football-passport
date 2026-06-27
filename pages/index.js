@@ -160,13 +160,13 @@ export default function Home() {
             <span className="font-mono text-sm font-bold tracking-wider text-chalk">FOOTBALL<span className="text-[#00e87a]">PASSPORT</span></span>
           </div>
           <div className="hidden md:flex items-center gap-8 font-body text-sm text-fog">
+            <a href="/dream" className="hover:text-chalk transition-colors">Dream</a>
             <a href="#features" className="hover:text-chalk transition-colors">Features</a>
             <a href="#roadmap" className="hover:text-chalk transition-colors">Roadmap</a>
-            <a href="#waitlist" className="hover:text-chalk transition-colors">Waitlist</a>
           </div>
-          <a href="#waitlist"
+          <a href="/passport"
             className="font-mono text-xs px-4 py-2 rounded border border-[#00e87a]/50 text-[#00e87a] hover:bg-[#00e87a] hover:text-pitch transition-all duration-300 tracking-wider">
-            EARLY ACCESS
+            MY PASSPORT
           </a>
         </nav>
 
@@ -211,13 +211,13 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="#waitlist"
+              <a href="/dream"
                 className="font-mono text-sm px-8 py-4 rounded-lg bg-[#00e87a] text-pitch font-bold hover:bg-[#00ff88] transition-all duration-300 glow-green tracking-wider w-full sm:w-auto text-center">
-                JOIN THE WAITLIST
+                FIND MY DREAM MATCH 🌟
               </a>
-              <a href="#features"
+              <a href="/passport"
                 className="font-mono text-sm px-8 py-4 rounded-lg border border-white/15 text-chalk hover:border-white/30 transition-all duration-300 tracking-wider w-full sm:w-auto text-center">
-                SEE FEATURES →
+                MY PASSPORT →
               </a>
             </div>
           </div>

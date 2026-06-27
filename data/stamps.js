@@ -1,0 +1,38 @@
+export const STAMPS = {
+  'manchester-derby': {
+    stadium: 'Old Trafford',
+    city: 'Manchester',
+    country: 'England',
+    year: '2026',
+    badge: '🔴',
+    color: '#dc2626',
+    shape: 'circle',
+  },
+  'el-clasico': {
+    stadium: 'Santiago Bernabéu',
+    city: 'Madrid',
+    country: 'Spain',
+    year: '2026',
+    badge: '⚪',
+    color: '#7c3aed',
+    shape: 'hexagon',
+  },
+  'ucl-final': {
+    stadium: 'Wembley',
+    city: 'London',
+    country: 'England',
+    year: '2026',
+    badge: '⭐',
+    color: '#d4a843',
+    shape: 'star',
+  },
+  'north-london-derby': {
+    stadium: 'Emirates Stadium',
+    city: 'London',
+    country: 'England',
+    year: '2026',
+    badge: '🔴',
+    color: '#dc2626',
+    shape: 'circle',
+  },
+};
