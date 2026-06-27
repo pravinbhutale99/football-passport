@@ -161,6 +161,7 @@ export default function Home() {
           </div>
           <div className="hidden md:flex items-center gap-8 font-body text-sm text-fog">
             <a href="/dream" className="hover:text-chalk transition-colors">Dream</a>
+            <a href="/schedule" className="hover:text-chalk transition-colors">Schedule</a>
             <a href="#features" className="hover:text-chalk transition-colors">Features</a>
             <a href="#roadmap" className="hover:text-chalk transition-colors">Roadmap</a>
           </div>
