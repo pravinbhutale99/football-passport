@@ -166,15 +166,13 @@ export default function SchedulePage() {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch(
-        `https://api.football-data.org/v4/competitions/${leagueCode}/matches?status=SCHEDULED,TIMED,IN_PLAY,PAUSED,FINISHED&limit=100`,
-        { headers: { 'X-Auth-Token': API_KEY } }
-      );
+      const res = await fetch(`/api/fixtures?league=${leagueCode}`);
       if (!res.ok) {
         if (res.status === 429) throw new Error('Rate limit reached. Please wait a moment.');
-        throw new Error(`Failed to fetch: ${res.status}`);
+        throw new Error(`Failed to fetch fixtures (${res.status})`);
       }
       const data = await res.json();
+      if (data.error) throw new Error(data.error);
       setMatches(data.matches || []);
       setLastUpdated(new Date());
     } catch (err) {
